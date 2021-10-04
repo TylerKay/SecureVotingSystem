@@ -13,3 +13,23 @@ a {
     text-decoration: underline;
     text-decoration-color: gray;
 }
+
+.newBtn {
+    outline: 2px solid;
+    outline-color: #0b6efe;
+    padding: 0.8% 1.5% 0.8% 1.5%;
+    border-radius: 2px;
+    background-color: #0b6efe;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+
+.newBtn:hover {
+  background-color: #0b5afe;
+  outline-color: #0b5afe;
+  color: white;
+}
