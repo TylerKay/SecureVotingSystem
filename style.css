@@ -34,3 +34,9 @@ a {
   color: white;
 }
 
+.centerButton {
+    align-self: center;
+    text-align: center;
+    padding: 30px;
+}
+
