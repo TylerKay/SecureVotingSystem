@@ -40,3 +40,8 @@ a {
     padding: 30px;
 }
 
+.center_options {
+    align-self: center;
+    text-align: center;
+}
+
