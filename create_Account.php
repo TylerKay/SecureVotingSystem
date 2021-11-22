@@ -12,7 +12,7 @@ $city = $_POST['city'];
 $state = $_POST['state'];
 $zip = $_POST['zip'];
 
-$conn = new mysqli('localhost','root','kawhi','voting_system');
+$conn = new mysqli('localhost','voter','voting','sci');
 if($conn->connect_error){
   echo "$conn->connect_error";
   die("Connection Failed : ". $conn->connect_error);

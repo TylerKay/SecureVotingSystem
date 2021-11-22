@@ -4,7 +4,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 //database connection here
-$con = new mysqli("localhost","voter","voting","voting_system");
+$con = new mysqli("localhost","voter","voting","sci");
 if($con->connect_error){
   die("Failed to connect!");
 }
