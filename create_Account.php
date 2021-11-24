@@ -12,13 +12,13 @@ $city = $_POST['city'];
 $state = $_POST['state'];
 $zip = $_POST['zip'];
 
-$conn = new mysqli('localhost','voter','voting','sci');
+$conn = new mysqli('localhost','root','root','sci');
 if($conn->connect_error){
   echo "$conn->connect_error";
   die("Connection Failed : ". $conn->connect_error);
 } else {
   $stmt = $conn->prepare("insert into voters(email,password,social,address,address2,city,state,zip) values(?, ?, ?, ?, ?, ?,?,?)");
-  $stmt->bind_param("sssssssi", $email,$pass,$social,$add,$add2,$city,$state,$zip);
+  $stmt->bind_param("ssssssss", $email,$pass,$social,$add,$add2,$city,$state,$zip);
   $execval = $stmt->execute();
   echo $execval;
   echo "Registration successfully...";
